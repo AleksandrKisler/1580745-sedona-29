@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "PtsansBold";
+  src: url('../fonts/ptsansbold.woff');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+div{
+
+}
+
+body{
+  position: relative;
+  background: #F2F2F2;
+  width: 1200px;
+  margin: 0 360px;
+}
+
+header{
+  position: absolute;
+  width: 100%;
+  height: 56px;
+
+  background: #FFFFFF;
+}
+
+nav{
+  position: relative;
+  margin: 0 72px;
+  height: 100%;
+}
+
+.top-menu{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.top-menu>li{
+  list-style: none;
+}
+
+.top-menu>li>a{
+  font-family: "PtsansBold" , sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+}
