@@ -18,6 +18,19 @@ div{
 
 }
 
+h2{
+  font-family:"Ptsans", sans-serif ;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 26px;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  margin: 58px 0 0 0;
+}
+
+
 h3{
   font-family:"Ptsans", sans-serif ;
   font-style: normal;
@@ -46,7 +59,7 @@ body{
   background: #F2F2F2;
   width: 1200px;
   margin: 0 360px;
-  box-shadow: 0px 0 4px lightgray,0px 0 4px lightgray ;
+  box-shadow:  0px 5px 15px rgba(0, 1, 1, 0.2);;
 }
 
 header{
@@ -202,4 +215,53 @@ aside{
   background-color: #EEEEEE;
   height: 256px;
   width: 100%;
+}
+
+.num{
+  margin: 25px 0 23px 0;
+}
+
+.interested-in{
+  height: 291px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFF;
+}
+
+.interested-in>p{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Ptsans" , sans-serif;
+  align-items: middle;
+  text-align: center;
+  padding: 0;
+  margin: 40px 0 55px 0;
+  line-height: 24px;
+}
+
+
+.modal-butoom{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 569.5px;
+  height: 82px;
+  background: #766357;
+  margin: 0 315px;
+
+}
+
+footer{
+  height: 120px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
 }
