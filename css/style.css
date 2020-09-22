@@ -45,7 +45,12 @@
 }
 
 .medium-text {
-
+  text-transform: uppercase;
+  font-family: "PTSans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  text-align: center;
 }
 
 .fix {
@@ -160,6 +165,7 @@ h4 {
   ----------------------------------------
  */
 .main {
+  margin: 55px 0 0 0;
   background: #FFFFFF;
 }
 
@@ -168,12 +174,10 @@ h4 {
       -> start section  welcome to SEDONA
  */
 .welcome-to-sedona {
-  padding: 55px 0 0 0;
   height: 509px;
   width: 100%;
   background-image: url('../img/bgf.png');
   background-repeat: no-repeat;
-  background-position: center 56px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -360,6 +364,12 @@ h4 {
 
 .phone-box {
   margin: 23px 0 36px 111px;
+}
+
+.phone-link{
+  text-decoration: none;
+  text-transform: none;
+  color: black;
 }
 
 .social-network-group {

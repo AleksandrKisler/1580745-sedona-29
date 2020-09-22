@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [aleks kisler](https://up.htmlacademy.ru/htmlcss/29/user/1580745).
-* Наставник: `Иван Бессалов`.   https://htmlacademy.ru/profile/lvov
+* Наставник: [Иван Бессалов](https://htmlacademy.ru/profile/lvov).
 
 ---
 
