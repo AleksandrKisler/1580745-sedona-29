@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -8,15 +8,17 @@
   <title>Hostels</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-body">
   <header class="header">
     <nav class="nav">
-      <ul class="top-menu">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><img src="img/logo/logo.png" alt="logo"></li>
-        <li><a href="#">Карта Штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+      <ul class="top-menu-left">
+        <li><a class="links" href="#">Информация</a></li>
+        <li><a class="links" href="#">Фото и видео</a></li>
+      </ul>
+      <a href="index.html"><img src="img/logo/logo.png" alt="logo" class="home-logo" width="138" height="70"></a>
+      <ul class="top-menu-right">
+        <li><a class="links" href="#">Карта Штата</a></li>
+        <li><a class="links" href="hostels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -25,15 +27,7 @@
       <form action=""></form>
     </section>
     <section class="answers">
-      <menu>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li>down</li>
-        <li>up</li>
-      </menu>
+
       <div class="answer-items">
         <div class="answer-content">
           <img src="" alt=""><div class="answer-text-and-click-box"></div><div class="rating-object"></div>
@@ -47,21 +41,20 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="container">
-      <form action="">
-
-      </form>
-      <div class="bottom-line-footer">
-        <div class="phone-box">
-
-        </div>
-        <div class="social-network-group">
-
-        </div>
-        <div class="about-us-box">
-
-        </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="phone-box">
+        <h3>#visitSEDONA<br>
+          ТЕЛ: +7(495) 666-01-66</h3>
+      </div>
+      <div class="social-network-group">
+        <a href="#" class="bg-lg"><img src="img/logo/twitter.png" alt="twitter" height="16" width="17" ></a>
+        <a href="#" class="bg-lg"><img src="img/logo/facebook.svg" alt="facebook" height="16" width="17" ></a>
+        <a href="#" class="bg-lg"><img src="img/logo/youtobe.svg" alt="youtobe" height="16" width="17" ></a>
+      </div>
+      <div class="html-academy">
+        <p class="small-text">Website by</p>
+        <img src="img/logo/logo-htmlacademy.svg" alt="htmlacademy">
       </div>
     </div>
   </footer>

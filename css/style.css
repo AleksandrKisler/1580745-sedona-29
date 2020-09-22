@@ -14,15 +14,21 @@
   src: url('../fonts/ptsans.woff');
 }
 
-* {
+.page{
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  grid-template-areas: ". body .";
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
-body {
+.page-body {
+  grid-area: body;
+  width: 1200px;
   position: relative;
   background: #F2F2F2;
-  width: 1200px;
   margin: 0 360px;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);;
 }
@@ -35,6 +41,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   text-align: center;
+
 }
 
 .medium-text {
@@ -42,7 +49,8 @@ body {
 }
 
 .fix {
-  margin: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -111,12 +119,14 @@ h4 {
   flex-direction: row;
 }
 
-.nav > a > img {
+.home-logo {
   height: 70px;
   width: 138px;
 }
 
 .top-menu-left, .top-menu-right {
+  padding: 0;
+  margin: 0;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -134,7 +144,7 @@ h4 {
   margin: 0 0 0 147px;
 }
 
-.top-menu-left > li > a, .top-menu-right > li > a {
+.links {
   font-family: "PtsansBold", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -234,7 +244,11 @@ h4 {
   width: 100%;
 }
 
-.description-box > dd {
+.description-box>h4{
+  margin: 0;
+}
+
+.description{
   font-family: "Ptsans", sans-serif;
   text-align: center;
   color: #FFF;
@@ -252,6 +266,7 @@ h4 {
   background-color: #FFF;
   width: 100%;
   padding: 55px 0 82px 0;
+  margin: 0;
 }
 
 .item-box {
@@ -262,29 +277,27 @@ h4 {
   height: 100%;
 }
 
-.item-box > img {
-  margin: 0px 0 28px 0;
+.img-icons-h{
+  margin: 0 0 28px 0;
 }
 
 .img-icons {
-  margin: 5px 0 28px 0 !important;
+  margin: 5px 0 28px 0;
 }
 
-.item-box > p {
-  margin: 25px 0 0 0;
-  height: 43px;
-  line-height: 21px;
-}
 
 .with-gray-color {
+  margin: 0;
   background-color: #EEEEEE;
-  padding: 47px 0 54px 0 !important;
+  padding: 47px 0 54px 0;
+  display: flex;
+  flex-direction: row;
   width: 100%;
 }
 
 .num {
-  margin: 25px 0 23px 0 !important;
-  height: 21px !important;
+  margin: 25px 0 23px 0;
+  height: 21px;
 }
 
 /*
@@ -378,3 +391,8 @@ h4 {
   margin-left: 6px;
 }
 
+.selections{
+  background-image: url("../img/logo/background.png");
+  width: 1200px;
+  height: 217px;
+}
