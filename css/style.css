@@ -24,6 +24,8 @@
 
   --special-active-white:rgba(255,255,255,0.3) ;
 
+  --opacity-black:rgba(0,0,0, 0.3);
+
   --special-hover-brown:#604E43;
   --special-active-brown:#503E33 ;
 
@@ -131,15 +133,16 @@
 
 .header {
   position: relative;
-  width: 100%;
+  width: 1200px;
   height: 56px;
   background: #FFFFFF;
 }
 
 .nav {
+  width: 1066px;
   position: relative;
   margin: 0 72px;
-  height: 100%;
+  height: inherit;
   display: flex;
   flex-direction: row;
 }
@@ -158,7 +161,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 100%;
+  height: inherit;
 }
 
 .top-menu-left > li {
@@ -209,7 +212,7 @@
 }
 
 .image-mask {
-  margin: 19px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 /*
@@ -440,10 +443,100 @@ background-color: var(--special-hover-brown);
   flex-direction: column;
 }
 
+.answer-header{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sort-list{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-size:12px;
+}
+
+
+
+.sort-list-title{
+  color:var(--basic-black);
+  margin:0 20px;
+}
+
+.sort-list-item{
+  margin:0 20px;
+}
+.sort-list-item>p{
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  color: var(--opacity-black);
+  border-bottom: var(--basic-blue) dotted 1px;
+}
+
+.sort-list-item>p:hover{
+  color: var(--basic-blue);
+}
+
+.sort-list-item>p:active{
+  border: 0;
+  color: var(--basic-black);
+}
+.icon-up {
+  }
+
+.icon-down:before {
+  content: "\25BC";
+  width: 11px;
+  height: 10px;
+  color: #81B3D2;
+}
+.icon-down:hover , .icon-up:hover{
+  color: var(--basic-black);
+}
+
+.more-details{
+  border: 0;
+  width: 110px;
+  height: 27px;
+  background-color: var(--basic-blue);
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--basic-white);
+}
+.more-details:hover{
+  background-color: var(--special-hover-blue);
+}
+.more-details:active{
+  background-color: var(--special-active-blue);
+  color: var(--special-active-white);
+}
+.reservation
+{
+  border: 0;
+  width: 142px;
+  height: 27px;
+  background-color: var(--basic-brown);
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--basic-white);
+}
+.reservation:hover{
+  background-color: var(--special-hover-brown);
+}
+.reservation:active{
+  background-color: var(--special-active-brown);
+  color: var(--special-active-white);
+}
+
+
+.default>p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--basic-blue);
 }
 
 .answer-content, .left-answer{
