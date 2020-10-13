@@ -44,6 +44,7 @@
 }
 
 .page-body {
+  justify-self: center;
   grid-column: 2;
   min-width: 1200px;
   position: relative;
@@ -453,15 +454,28 @@ background-color: var(--special-hover-brown);
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 86px;
   justify-content: space-between;
   align-items: center;
 }
+
+
+
+.answer-content, .left-answer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 
 .sort-list{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   font-size:12px;
+  padding: 0;
+  margin: 0;
 }
 
 .sort-list-title{
@@ -470,16 +484,22 @@ background-color: var(--special-hover-brown);
   font-size: 21px;
   line-height: 26px;
   padding: 0;
-  margin: 0;
+  margin: 4px 0 0 73px;
+}
+.default>p{
+  margin: 0 32px 0 0;
+  padding: 0;
+  border: 0;
+  color: var(--basic-blue);
 }
 
 .sort-list-subtitle{
   color:var(--basic-black);
-  margin:0 20px;
+  margin:0 40px 0 46px;
 }
 
 .sort-list-item{
-  margin:0 20px;
+  margin:0 32px 0 0;
 }
 .sort-list-item>p{
   margin: 0;
@@ -544,17 +564,4 @@ background-color: var(--special-hover-brown);
   color: var(--special-active-white);
 }
 
-
-.default>p{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  color: var(--basic-blue);
-}
-
-.answer-content, .left-answer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
 
