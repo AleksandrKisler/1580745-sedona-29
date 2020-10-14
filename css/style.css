@@ -35,18 +35,20 @@
 
 .page{
   display: grid;
-  grid-template-columns: auto min-content auto;
-  grid-template-rows: auto;
+  grid-template-columns: auto 1200px auto;
+  grid-template-rows: min-content;
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+  align-content: start;
+  justify-items: center;
 }
 
 .page-body {
   justify-self: center;
   grid-column: 2;
-  min-width: 1200px;
+  max-width: 1200px;
   position: relative;
   background-color: #f2f2f2;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
@@ -58,7 +60,7 @@
   margin: 0;
   padding: 0;
 }
-.page img{
+.page>img{
   max-width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -153,8 +155,6 @@
   width: 138px;
 }
 
-
-
 .top-menu-left, .top-menu-right {
   padding: 0;
   margin: 0;
@@ -165,7 +165,6 @@
   height: inherit;
 }
 
-
 .top-menu-left > li {
   margin: 0 124px 0 0;
 }
@@ -173,7 +172,6 @@
 .top-menu-right > li {
   margin: 0 0 0 135px;
 }
-
 
 .links {
   font: inherit;
@@ -194,6 +192,7 @@
 /*
   ----------------------------------------
       -> end header
+      -> start index.html
       -> start sections with info about SEDONA city
   ----------------------------------------
  */
@@ -236,11 +235,9 @@
 .short-info-box {
   padding: 42px 0 51px 0;
 }
-
 .short-info-box > h3 {
   height: 80px;
 }
-
 .short-info-box > p {
   margin: 16px 0 0 0;
   height: 26px;
@@ -274,7 +271,6 @@
   height: 155px;
   width: 400px;
 }
-
 .description-box>h4{
   margin: 0;
 }
@@ -307,7 +303,6 @@
 .img-icons-h{
   margin: 0 0 28px 0;
 }
-
 .img-icons {
   margin: 5px 0 28px 0;
 }
@@ -331,7 +326,6 @@
       -> end section descriptions
       -> start section interested q
 */
-
 
 .interested-in {
   height: 291px;
@@ -373,9 +367,11 @@ background-color: var(--special-hover-brown);
 }
 
 /*
+  ----------------------------------------
     -> end section interested q
     -> end index.html properties
     -> start footer
+  ----------------------------------------
 */
 
 .footer {
@@ -396,7 +392,6 @@ background-color: var(--special-hover-brown);
 .phone-box {
   margin: 23px 0 36px 111px;
 }
-
 .phone-link{
   text-decoration: none;
   text-transform: none;
@@ -427,10 +422,16 @@ background-color: var(--special-hover-brown);
   align-items: center;
   margin: 0 0 0 190px;
 }
-
 .html-academy > img {
   margin-left: 6px;
 }
+
+/*
+    ----------------------------------------
+    -> end section footer
+    -> start hostels.html properties
+    ----------------------------------------
+ */
 
 .selections{
   background-image: url("../img/logo/background.png");
@@ -450,6 +451,12 @@ background-color: var(--special-hover-brown);
   flex-direction: column;
 }
 
+/*
+    -> end section selections
+    -> start answers section
+    -> start answer sort block
+ */
+
 .answer-header{
   display: flex;
   flex-direction: row;
@@ -457,16 +464,8 @@ background-color: var(--special-hover-brown);
   height: 86px;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px var(--basic-gray) solid;
 }
-
-
-
-.answer-content, .left-answer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 
 .sort-list{
   display: flex;
@@ -517,8 +516,7 @@ background-color: var(--special-hover-brown);
   border: 0;
   color: var(--basic-black);
 }
-.icon-up {
-  }
+
 
 .icon-down:before {
   content: "\25BC";
@@ -529,6 +527,78 @@ background-color: var(--special-hover-brown);
 .icon-down:hover , .icon-up:hover{
   color: var(--basic-black);
 }
+/*
+    -> end answer sort block
+    -> start answer content block
+ */
+
+.answer-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 0 70px;
+  border-bottom: 1px var(--basic-gray) solid;
+  padding: 30px 0;
+}
+.left-answer{
+  display: flex;
+  flex-direction: row;
+}
+.image-hotel{
+  width: 135px;
+  height: 90px;
+}
+
+.answer-text-and-button-box{
+  margin: 0 0 0 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: start;
+  height: 90px;
+}
+.answer-text-and-button-box>h3{
+  text-align: left;
+}
+.short-hotel-description{
+  display: flex;
+  flex-direction: row;
+}
+.short-hotel-description>p:not(last-child){
+  margin: 0 38px 0 0;
+}
+.buttons-mr{
+  display: flex;
+  flex-direction: row;
+}
+
+.right-answer{
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  margin: 0 0 0 522px;
+}
+.star-list{
+  
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: end ;
+  align-self: end;
+}
+
+.right-answer>p{
+  background-color: var(--basic-extra-white);
+  width: 110px;
+  margin: 0;
+  padding: 3px 0;
+  text-align: center;
+  vertical-align: center;
+
+}
 
 .more-details{
   border: 0;
@@ -538,6 +608,7 @@ background-color: var(--special-hover-brown);
   text-transform: uppercase;
   font-size: 14px;
   color: var(--basic-white);
+  margin-right: 6px;
 }
 .more-details:hover{
   background-color: var(--special-hover-blue);
