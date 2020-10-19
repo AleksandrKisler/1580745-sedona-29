@@ -31,6 +31,8 @@
 
   --special-hover-blue:#669EC0;
   --special-active-blue:#5496BD;
+
+  --special-active-gray:#BDBBBC ;
 }
 
 .page{
@@ -187,6 +189,10 @@
 }
 .links:active{
   color: var(--opacity-black);
+}
+.active{
+  color: var(--basic-brown);
+  cursor: pointer;
 }
 
 /*
@@ -407,12 +413,21 @@ background-color: var(--special-hover-brown);
 .bg-lg {
   width: 46px;
   height: 48px;
-  background-color: #81B3D2;
+  background-color: var(--basic-blue);
   display: flex;
   flex-direction: column;
   margin: 0 0 0 6px;
   align-items: center;
   justify-content: center;
+}
+.bg-lg:hover{
+  background-color: var(--special-hover-blue);
+}
+.bg-lg:active{
+  background-color: var(--special-active-blue);
+}
+.bg-lg:active .social-network-icon>path{
+  fill: var(--special-active-white);
 }
 
 .html-academy {
@@ -422,9 +437,20 @@ background-color: var(--special-hover-brown);
   align-items: center;
   margin: 0 0 0 190px;
 }
-.html-academy > img {
+.html-academy>a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: 6px;
 }
+.html-academy>a:hover .html-academy-icon>path{
+  fill: var(--basic-blue);
+}
+.html-academy>a:active .html-academy-icon>path{
+  fill: var(--special-active-gray);
+}
+
 
 /*
     ----------------------------------------
@@ -517,15 +543,19 @@ background-color: var(--special-hover-brown);
   color: var(--basic-black);
 }
 
-
-.icon-down:before {
-  content: "\25BC";
-  width: 11px;
-  height: 10px;
-  color: #81B3D2;
+.up-down{
+  margin-right: 73px ;
 }
-.icon-down:hover , .icon-up:hover{
-  color: var(--basic-black);
+.up-down-icon{
+  margin-right:10px;
+}
+
+.up-down-icon>path:hover{
+  fill: var(--basic-black);
+  margin-right:12px;
+}
+.up-down-icon>path:active{
+  fill: var(--basic-blue);
 }
 /*
     -> end answer sort block
@@ -557,9 +587,18 @@ background-color: var(--special-hover-brown);
   align-content: start;
   height: 90px;
 }
-.answer-text-and-button-box>h3{
+.answer-text-and-button-box>a{
   text-align: left;
 }
+.hotel-link{
+  color: var(--basic-black);
+}.hotel-link:hover{
+  color: var(--basic-blue);
+ }.hotel-link:active{
+     color: var(--basic-black);
+    opacity: 0.3;
+   }
+
 .short-hotel-description{
   display: flex;
   flex-direction: row;
@@ -576,19 +615,18 @@ background-color: var(--special-hover-brown);
   width: 110px;
   display: flex;
   flex-direction: column;
-  align-items: end;
-
+  height: 90px;
   margin: 0 0 0 522px;
 }
 .star-list{
-  
+  width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 0 49px 0;
   display: flex;
-  flex-direction: row;
-  justify-content: end ;
-  align-self: end;
+  flex-direction: row-reverse;
+  justify-content: end;
 }
+
 
 .right-answer>p{
   background-color: var(--basic-extra-white);
@@ -634,5 +672,3 @@ background-color: var(--special-hover-brown);
   background-color: var(--special-active-brown);
   color: var(--special-active-white);
 }
-
-
